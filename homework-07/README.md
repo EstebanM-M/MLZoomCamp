@@ -206,17 +206,20 @@ response is:
 ```
  
 ## Deployment
- 
-*In progress.*
- 
-The service is being deployed to AWS Elastic Beanstalk as a Docker container, in a
-single-instance environment. This section will link a video of the deployment showing the
-environment being created and the service answering requests on its public URL.
- 
-The environment will be terminated after recording to avoid running costs, so the public URL
-will not stay active. The service can be reproduced locally with the commands in the previous
-section, which produce exactly the same behaviour.
- 
+
+The service was deployed to AWS Elastic Beanstalk as a Docker container, in a single-instance
+environment.
+
+**Deployment demo:** https://github.com/user-attachments/assets/dbc2e392-927c-432c-9684-1c2fc1ce3d30
+
+The video shows the running environment in the AWS console, a request sent to its public URL
+from a notebook, and the response matching the probability computed locally for the same
+transaction — confirming the deployed service reproduces the model exactly.
+
+The environment was terminated after recording to avoid running costs, so the public URL is
+no longer active. The service can be reproduced locally with the commands in the previous
+section.
+
 ## Limitations
  
 **No interpretability.** The features are PCA components, so the model cannot point to what
